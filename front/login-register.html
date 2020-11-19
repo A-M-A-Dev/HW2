@@ -1,0 +1,67 @@
+<div class="bg-light login-parent" style="height: 100vh;">
+
+    <nav id="login-nav" class="d-flex align-items-center navbar login-container">
+        <div class="login-logo-container r-2">
+            <img src="images/logo-black.png" alt="Logo" id="day-logo">
+            <img src="images/logo-blue.png" alt="Logo" id="night-logo">
+        </div>
+        <div class="d-flex align-items-center">
+
+            <a href="#home" id="go-home" class="mr-auto p-2 ml-2 text-decoration-none text-dark"><span>بازگشت به خانه</span> <i
+                    class="fal fa-angle-double-left"></i></a>
+        </div>
+    </nav>
+
+    <div id="login-box" class="row login-container login-box">
+        <div class="col bg-white">
+            <div class="row tab-header">
+                <div class="col-6 p-0">
+                    <button id="register-tab-btn" class="text-center h-100 w-100 m-0 btn btn-outline-primary border-0 rounded-0" disabled><b>ثبت‌نام</b></button>
+                </div>
+                <div class="col-6 p-0">
+                    <button id="login-tab-btn" class="text-center h-100 w-100 m-0 btn btn-primary rounded-0"><b>ورود</b></button>
+                </div>
+            </div>
+            <div id="register-tab" class="row form-tab">
+                <div class="m-auto">
+                    <input type="email" class="form-control my-2 p-4 login-form-item" placeholder="ایمیل">
+                    <input type="password" class="form-control my-2 p-4 login-form-item" placeholder="رمز عبور">
+                    <input type="password" class="form-control my-2 p-4 login-form-item" placeholder="تکرار رمز عبور">
+                    <div class="form-check my-2">
+                        <div class="float-right">
+                            <input class="form-check-input float-right" type="checkbox" value="" id="acceptRules">
+
+                        </div>
+                        <label class="form-check-label mr-4 float-right" for="acceptRules">
+                            <small>
+                                قوانین و شرایط را می‌پذیرم
+                            </small>
+                        </label>
+                    </div>
+                    <button type="button" class="btn btn-primary my-2 p-2 login-form-item">ثبت‌نام</button>
+                </div>
+            </div>
+
+            <div id="login-tab" class="row d-none form-tab">
+                <div class="m-auto">
+                    <input type="email" class="form-control my-2 p-4 login-form-item" id="email-input" placeholder="ایمیل">
+                    <input type="password" class="form-control my-2 p-4 login-form-item" id="password-input" placeholder="رمز عبور">
+                    <button type="button" class="btn btn-primary my-2 p-2 login-form-item">ورود</button>
+                </div>
+            </div>
+        </div>
+        <div id="login-image" class="col p-0">
+            <div class="p-relative text-center">
+                <picture>
+                    <source class="login-box" media="(min-width: 1000px)" srcset="images/signup-highQ-light.jpg">
+                    <img class="login-box" src="images/signup-lowQ-light.jpg">
+                </picture>
+                <div class="image-text h4">عبارتی کوتاه و دلخواه که کاربر را به ثبت‌نام تشویق کند.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading JS -->
+    <script src="js/main.js"></script>
+    <script src="js/login-register-tab-toggle.js"></script>
+</div>

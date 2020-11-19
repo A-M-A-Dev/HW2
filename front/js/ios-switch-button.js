@@ -1,10 +1,10 @@
-let bodyList = document.body.classList;
-var toggle = {
-        el: document.getElementById("switch-wrap-1"),
-        hit: false,
-        pos: 0
-    },
-    acceptableSwipeDistance = 80;
+window.bodyList = document.body.classList;
+window.toggle = {
+    el: document.getElementById("switch-wrap-1"),
+    hit: false,
+    pos: 0
+};
+window.acceptableSwipeDistance = 80;
 
 function toggleHit(t){
     /* Tells CSS it's time to use animations now. This prevents the initial animation on page load. */
