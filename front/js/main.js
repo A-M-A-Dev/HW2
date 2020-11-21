@@ -19,3 +19,12 @@ jQuery(document).ready(function ($) {
         $sidebar.removeClass('open-sidebar');
     });
 });
+
+// Modal
+function openModal(state) {
+    // TODO Ahmad : State is whether login or register - open tab according to this value
+    document.getElementById('modal').classList.add('active-modal');
+}
+function closeModal(state) {
+    document.getElementById('modal').classList.remove('active-modal');
+}
