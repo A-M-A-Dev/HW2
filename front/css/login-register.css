@@ -48,12 +48,9 @@ body.night-mode #go-home {
 .login-box {
     height: 400px;
     background-color: white;
+    min-width: 350px;
+    max-width: 400px;
 }
-
-/* body.night-mode .login-box {
-    height: 400px;
-    background-color: var(--dark-blue-color);
-} */
 
 .btn-custom {
     color: white;
@@ -179,5 +176,9 @@ body.night-mode .image-text {
 @media only screen and (max-width: 600px) {
     #login-image {
         display: none;
+    }
+
+    .login-box {
+        max-width: 100%;
     }
 }
