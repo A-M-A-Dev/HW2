@@ -32,13 +32,15 @@ function closeModal(state) {
 
 showLoginAlert = message => {
     $('#alert-zone').html(`
-        <div class="alert alert-danger alert-dismissible fade show mx-auto" role="alert">
+        <div id="login-alert" class="alert alert-danger alert-dismissible fade show mx-auto" style="display:none;" role="alert">
             <button id="dismiss-alert" type="button" class="close" data-dismiss="alert" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             ${message}
         </div>
     `);
+
+    $('#login-alert').slideDown("fast");
 }
 
 login = () => {
