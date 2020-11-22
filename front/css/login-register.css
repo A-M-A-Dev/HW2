@@ -50,7 +50,11 @@ body.night-mode .login-logo-container img#night-logo {
 }
 
 .form-tab {
-    height: 85%;
+    height: 70%;
+}
+
+.tab-footer {
+    height: 15%;
 }
 
 .login-parent {

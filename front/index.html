@@ -126,13 +126,12 @@
                 </div>
                 <div id="register-tab" class="row form-tab">
                     <div class="m-auto">
-                        <input type="email" class="form-control my-2 p-4 login-form-item" placeholder="ایمیل">
-                        <input type="password" class="form-control my-2 p-4 login-form-item" placeholder="رمز عبور">
-                        <input type="password" class="form-control my-2 p-4 login-form-item" placeholder="تکرار رمز عبور">
+                        <input id="register-email-input" type="email" class="form-control my-2 p-4 login-form-item" placeholder="ایمیل">
+                        <input id="register-password-input" type="password" class="form-control my-2 p-4 login-form-item" placeholder="رمز عبور">
+                        <input id="register-repeat-password-input" type="password" class="form-control my-2 p-4 login-form-item" placeholder="تکرار رمز عبور">
                         <div class="form-check my-2">
                             <div class="float-right">
-                                <input class="form-check-input float-right" type="checkbox" value="" id="acceptRules">
-    
+                                <input id="register-accept-rules" class="form-check-input float-right" type="checkbox" value="" id="acceptRules">
                             </div>
                             <label class="form-check-label mr-4 float-right" for="acceptRules">
                                 <small>
@@ -140,16 +139,19 @@
                                 </small>
                             </label>
                         </div>
-                        <button type="button" class="btn btn-primary my-2 p-2 login-form-item">ثبت‌نام</button>
+                        <button onclick="register()" type="button" class="btn btn-primary my-2 p-2 login-form-item">ثبت‌نام</button>
                     </div>
                 </div>
     
                 <div id="login-tab" class="row d-none form-tab">
                     <div class="m-auto">
-                        <input type="email" class="form-control my-2 p-4 login-form-item" id="email-input" placeholder="ایمیل">
-                        <input type="password" class="form-control my-2 p-4 login-form-item" id="password-input" placeholder="رمز عبور">
-                        <button type="button" class="btn btn-primary my-2 p-2 login-form-item">ورود</button>
+                        <input id="login-email-input" type="email" class="form-control my-2 p-4 login-form-item" placeholder="ایمیل">
+                        <input id="login-password-input" type="password" class="form-control my-2 p-4 login-form-item" placeholder="رمز عبور">
+                        <button onclick="login()" type="button" class="btn btn-primary my-2 p-2 login-form-item">ورود</button>
                     </div>
+                </div>
+
+                <div id="alert-zone" class="row tab-footer px-2">
                 </div>
             </div>
             <div id="login-image" class="col p-0">
