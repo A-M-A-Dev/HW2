@@ -15,11 +15,11 @@ disableTabButton = buttonId => {
 };
 
 showTab = tabId => {
-    $(`#${tabId}`).removeClass("d-none");
+    $(`#${tabId}`).hide("fast");
 };
 
 hideTab = tabId => {
-    $(`#${tabId}`).addClass("d-none");
+    $(`#${tabId}`).show("slow");
 };
 
 toggleText = (hide, show) => {
