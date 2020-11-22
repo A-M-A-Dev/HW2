@@ -22,11 +22,17 @@ hideTab = tabId => {
     $(`#${tabId}`).addClass("d-none");
 };
 
+toggleText = (hide, show) => {
+    $(`#${hide}-text`).hide("fast");
+    $(`#${show}-text`).slideDown("slow");
+}
+
 $("#login-tab-btn").click(() => {
     enableTabButton("register-tab-btn");
     disableTabButton("login-tab-btn");
     hideTab("register-tab");
     showTab("login-tab");
+    toggleText("register", "login");
 });
 
 $("#register-tab-btn").click(() => {
@@ -34,4 +40,5 @@ $("#register-tab-btn").click(() => {
     disableTabButton("register-tab-btn");
     hideTab("login-tab");
     showTab("register-tab");
+    toggleText("login", "register");
 });
