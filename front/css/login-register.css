@@ -69,8 +69,97 @@ body.night-mode .login-logo-container img#night-logo {
     transform: translate(-50%, -50%);
 }
 
+.logreg-input {
+    padding: 1.5rem !important;
+}
+
 @media only screen and (max-width: 600px) {
     #login-image {
         display: none;
     }
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1130px) {
+
+    .logreg-input {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .tab-header {
+        height: 10%;
+    }
+
+    .form-tab {
+        height: 60%;
+    }
+
+    .tab-footer {
+        height: 30%;
+    }
+
+    .login-form-item {
+        width: 175px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 999px) {
+    .login-box {
+        height: 400px;
+        width: 100%;
+    }
+
+    .form-tab div {
+
+        /* padding: 1rem !important; */
+    }
+}
+
+
+/* 
+@media only screen and (min-width: 1001px) and (max-width: 1070px) {
+
+    .login-box {
+        height: 350px;
+    }
+
+    .login-form-item {
+        width: 250px;
+    }
+
+    .logreg-input {
+        padding: .75rem !important;
+    }
+}
+
+
+@media only screen and (min-width: 851px) and (max-width: 1000px) {
+
+    .login-box {
+        height: 300px;
+    }
+
+    .login-form-item {
+        width: 200px;
+    }
+
+    .logreg-input {
+        padding: .5rem !important;
+    }
+}
+
+
+@media only screen and (min-width: 601px) and (max-width: 850px) {
+
+    .login-box {
+        height: 300px;
+    }
+
+    .login-form-item {
+        width: 200px;
+    }
+
+    .logreg-input {
+        padding: .5rem !important;
+    }
+} */
