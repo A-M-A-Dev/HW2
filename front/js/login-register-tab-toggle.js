@@ -23,7 +23,6 @@ hideTab = tabId => {
 };
 
 $("#login-tab-btn").click(() => {
-    window.location.hash = "#login";
     enableTabButton("register-tab-btn");
     disableTabButton("login-tab-btn");
     hideTab("register-tab");
@@ -31,8 +30,6 @@ $("#login-tab-btn").click(() => {
 });
 
 $("#register-tab-btn").click(() => {
-    console.log("here")
-    window.location.hash = "#register";
     enableTabButton("login-tab-btn");
     disableTabButton("register-tab-btn");
     hideTab("login-tab");
