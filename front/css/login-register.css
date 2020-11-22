@@ -37,9 +37,67 @@ body.night-mode .login-logo-container img#night-logo {
     display: inline-block;
 }
 
+#go-home {
+    color: black;
+}
+
+body.night-mode #go-home {
+    color: white;
+}
+
 .login-box {
     height: 400px;
+    background-color: white;
 }
+
+/* body.night-mode .login-box {
+    height: 400px;
+    background-color: var(--dark-blue-color);
+} */
+
+.btn-custom {
+    color: white;
+    background-color: var(--blue-color);
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: #0069d9;
+}
+
+.btn-custom:disabled {
+    color: var(--blue-color);
+    background-color: white;
+}
+
+/* body.night-mode .accept-rules-label {
+    color: white;
+}
+
+body.night-mode .btn-custom {
+    color: var(--dark-blue-color);
+    background-color: white;
+    border-color: white;
+}
+body.night-mode .btn-custom:hover {
+    color: var(--dark-blue-color);
+    background-color: rgb(230, 230, 230);
+    border-color: rgb(230, 230, 230);
+}
+body.night-mode .btn-custom:active {
+    color: var(--dark-blue-color) !important;
+    background-color: rgb(230, 230, 230) !important;
+    border-color: rgb(230, 230, 230) !important;
+}
+body.night-mode .btn-custom:focus {
+    background-color: rgb(230, 230, 230) !important;
+    box-shadow: 0 0 0 0.2rem var(--dark-blue-color);
+}
+body.night-mode .btn-custom:disabled {
+    color: white;
+    background-color: var(--dark-blue-color);
+    border-color: var(--dark-blue-color);
+} */
 
 .login-form-item {
     width: 300px;
@@ -60,6 +118,13 @@ body.night-mode .login-logo-container img#night-logo {
 .login-parent {
     padding-left: 10%;
     padding-right: 10%;
+    background-color: #f3f3f3;
+}
+
+body.night-mode .login-parent {
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--dark-blue-color);
 }
 
 .image-text {
@@ -83,7 +148,10 @@ body.night-mode #login-image {
     background-image: url("../images/signup-highQ-dark.jpg");
     background-size: cover;
     background-position: center;
+    box-shadow: -22px 0px 92px -21px #595959;
 }
+
+
 
 @media only screen and (max-width: 1000px) {
     #login-image {
