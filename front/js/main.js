@@ -23,7 +23,6 @@ jQuery(document).ready(function ($) {
 // Modal
 function openModal(state) {
     $(`#${state}-tab-btn`).click()
-    // TODO Ahmad : State is whether login or register - open tab according to this value
     document.getElementById('modal').classList.add('active-modal');
 }
 function closeModal(state) {
