@@ -52,50 +52,6 @@ body.night-mode #go-home {
     max-width: 400px;
 }
 
-.btn-custom {
-    color: white;
-    background-color: var(--blue-color);
-}
-
-.btn-custom:hover {
-    color: white;
-    background-color: #0069d9;
-}
-
-.btn-custom:disabled {
-    color: var(--blue-color);
-    background-color: white;
-}
-
-/* body.night-mode .accept-rules-label {
-    color: white;
-}
-
-body.night-mode .btn-custom {
-    color: var(--dark-blue-color);
-    background-color: white;
-    border-color: white;
-}
-body.night-mode .btn-custom:hover {
-    color: var(--dark-blue-color);
-    background-color: rgb(230, 230, 230);
-    border-color: rgb(230, 230, 230);
-}
-body.night-mode .btn-custom:active {
-    color: var(--dark-blue-color) !important;
-    background-color: rgb(230, 230, 230) !important;
-    border-color: rgb(230, 230, 230) !important;
-}
-body.night-mode .btn-custom:focus {
-    background-color: rgb(230, 230, 230) !important;
-    box-shadow: 0 0 0 0.2rem var(--dark-blue-color);
-}
-body.night-mode .btn-custom:disabled {
-    color: white;
-    background-color: var(--dark-blue-color);
-    border-color: var(--dark-blue-color);
-} */
-
 .login-form-item {
     width: 300px;
 }
