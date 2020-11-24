@@ -170,6 +170,21 @@ body.night-mode #sidebar hr {
 .image-container i {
     font-size: 5em;
 }
+/************ Modal ************/
+#modal {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    transform: scale(0);
+    transition-duration: 0.25s;
+}
+#modal.active-modal {
+    transform: scale(1);
+}
 /************ Responsive ************/
 @media only screen and (max-width: 1000px) {
     .grid-container {
