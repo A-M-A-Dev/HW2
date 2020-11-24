@@ -7,6 +7,6 @@ server {
 	server_name _;
 
 	location / {
-    alias /path/to/front/root;
+    		alias /path/to/front/root;
 	}
 }
