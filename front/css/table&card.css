@@ -1,12 +1,12 @@
 
 
 /** Data page **/
-
+.data-tab {
+    margin-bottom: 200px;
+}
 .data-tbl{
     width: 70% !important;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10%;
+    margin: 50px auto 30px;
 }
 .data-tbl th {
     background-color: #f0f2f5 !important;
@@ -36,36 +36,38 @@ body.night-mode .data-tbl tr:nth-child(even) {
     background-color: #1a1a1a !important;
     color: rgba(245, 245, 245, 0.897);
 }
+#data-buttons-container {
+    width: 70%;
+    margin: 10px auto;
+}
+#data-buttons-container .prev-flex, #data-buttons-container .next-flex {
+    border: 1px solid #808080;
+    color: #808080;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+#data-buttons-container .prev-flex:hover, #data-buttons-container .next-flex:hover {
+    background: #808080;
+    color: white;
+}
 .prev-flex {
     float: right;
-    border: 1px solid #cccccc;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    border-radius: 4px;
-    margin-right: 15%;
-    margin-bottom: 17%;
 }
 .next-flex {
     float: left;
-    border: 1px solid #cccccc;
-    padding-left: 25px !important;
-    padding-right: 25px !important;
-    border-radius: 4px;
-    margin-left: 15%;
-    margin-bottom: 17%;
 }
-body.night-mode .prev-flex {
+body.night-mode #data-buttons-container .prev-flex, body.night-mode #data-buttons-container .next-flex {
+     border: 1px solid #262626;
+     color: #262626;
+ }
+body.night-mode #data-buttons-container .prev-flex:hover, body.night-mode #data-buttons-container .next-flex:hover {
+    background: #262626;
     color: white;
-    border: 1px solid #8c8c8c;
-    background-color: #999999;
-}
-body.night-mode .next-flex {
-    color: white;
-    border: 1px solid #8c8c8c;
-    background-color: #999999;
 }
 .allCards {
-    max-width: 18rem;
+    width: 70%;
     display: none;
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +75,7 @@ body.night-mode .next-flex {
 }
 .flex-cards-container { 
     display: flex; 
-    width: 305px;
+    width: 100%;
     height:180px; 
     margin-top: auto;
     margin-bottom: auto;
@@ -81,11 +83,11 @@ body.night-mode .next-flex {
     margin-right: auto;
     flex-flow: column wrap; 
     background-color: white; 
-    align-content: space-between; 
+    align-content: space-between;
+    border-radius: 5px;
 } 
 .flex-cards-container > div { 
-    background-color: #fff; 
-    width: 200px; 
+    background-color: #fff;
     margin: 5px; 
     text-align: center; 
     line-height: 35px; 
@@ -113,5 +115,8 @@ body.night-mode .flex-cards-container > div {
     }
     .allCards {
         display: block !important;
+    }
+    .tab-pane {
+        margin-top: 20px;
     }
 }

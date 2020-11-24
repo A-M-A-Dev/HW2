@@ -9,7 +9,9 @@
     --gray-lighter-color: #dedff6;
     --dark-blue-color: #1a1a27;
 }
-
+body {
+    background: #EEEEEE;
+}
 /***************** Top Nav *****************/
 #top-nav {
     background: white;
@@ -139,6 +141,7 @@ body.night-mode #sidebar hr {
     background: #EEEEEE;
     width: calc(100% - 300px);
     margin: 75px 300px 0 0;
+    overflow: hidden;
 }
 /************* Main Page *************/
 .grid-container {
@@ -261,6 +264,9 @@ body.night-mode #sidebar hr {
         margin-right: 0;
     }
     /** Main Page **/
+    #pills-home {
+        margin-bottom: 100px;
+    }
     .grid-container {
         grid-template-columns: 100%;
     }

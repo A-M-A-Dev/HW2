@@ -97,7 +97,7 @@
             <div class="grid-item"><div class="image-container"><i class="fal fa-image"></i></div></div>
         </div>
     </div>
-    <div class="tab-pane fade table-div" id="pills-data" role="tabpanel" aria-labelledby="pills-data-tab">
+    <div class="tab-pane fade table-div data-tab" id="pills-data" role="tabpanel" aria-labelledby="pills-data-tab">
         <table class="table table-bordered table-striped table-hover data-tbl">
             <tr>
               <th>رتبه</th>
@@ -234,8 +234,10 @@
                 </div> 
             </div>
         </div>
-        <div class="d-inline-flex p-2 bd-highlight prev-flex">قبلی</div>
-        <div class="d-inline-flex p-2 bd-highlight next-flex">بعدی</div>
+        <div id="data-buttons-container">
+            <div class="bd-highlight prev-flex">قبلی</div>
+            <div class="bd-highlight next-flex">بعدی</div>
+        </div>
     </div>
 </div>
 <div id="modal">
@@ -300,10 +302,6 @@
                 </div>
             </div>
         </div>
-    
-        <!-- Loading JS -->
-        <script src="js/main.js"></script>
-        <script src="js/login-register-tab-toggle.js"></script>
     </div>
 </div>
 <!-- Loading JS -->
@@ -311,5 +309,6 @@
 <script src="js/ios-switch-button.js"></script>
 <script src="js/login-register-tab-toggle.js"></script>
 <script src="js/main.js"></script>
+<script src="js/login-register-tab-toggle.js"></script>
 </body>
 </html>
